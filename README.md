@@ -1,2 +1,12 @@
 # findbackuplibsql
-find backup for a list of files using libsql
+Pure Rust program: Read the screen and formated list of windows files and see if they exist in the Backup Database. Output files reflecting finds and not founds. This is used to restore files.
+This program uses libsql vs findbackupdb uses sql3 interface
+example:
+
+findbackup01 bk20240531061717.db3 20250217List.csv_out02.csv
+
+bk20240531061717.db3 is backup database 
+
+20250217List.csv_out02.csv is the screen and formated list of windows files from windirparse
+
+very slow because of database calls but 7% faster than findbackupdb
