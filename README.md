@@ -1,5 +1,5 @@
 # findbackuplibsql
-Pure Rust program: Read the screened and formated list of windows files and see if they exist in the Backup Database. Output files reflecting finds and not founds. This is used to restore files.
+Pure Rust program: Read the screened and formated list of windows files and see if they exist in the Backup Database. Output files reflecting the found and not found. This is used to restore files.
 
 This program uses libsql vs findbackupdb uses sql3 interface
 
