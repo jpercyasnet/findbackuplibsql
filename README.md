@@ -5,9 +5,9 @@ This program uses libsql vs findbackupdb uses sql3 interface
 
 example:
 
-findbackup01 bk20240531061717.db3 20250217List.csv_out02.csv
+findbackup01 bk20241103a.db3 20250217List.csv_out02.csv
 
-bk20240531061717.db3 is backup database 
+bk20241103a.db3 is backup database 
 
 20250217List.csv_out02.csv is the screen and formated list of windows files from windirparse
 
@@ -22,3 +22,5 @@ sudo chmod 777 /tmp/ramdisk
 sudo mount -t tmpfs -o size=2G myramdisk /tmp/ramdisk
 
 sqlite3 bk20241103a.db3 ".backup '/tmp/ramdisk/backup.db3'"
+
+findbackup01 /tmp/ramdisk/backup.db3 20250217List.csv_out02.csv
