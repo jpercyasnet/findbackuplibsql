@@ -13,7 +13,7 @@ bk20241103a.db3 is backup database
 
 very slow because of database calls but 7% faster than findbackupdb
 
-60% faster when copying database to ram:
+35% faster when copying database to ram:
 
 sudo mkdir /tmp/ramdisk
 
